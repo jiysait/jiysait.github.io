@@ -10,7 +10,8 @@ import { useGLTF } from "@react-three/drei";
 
 function Model(props) {
   // const gltf = useLoader(GLTFLoader, "../../public/chestbox.glb");
-  const gltf = useGLTF(modelPath);
+  // const gltf = useGLTF(modelPath);
+  const gltf = useGLTF("../../public/chestbox.glb");
   return <primitive {...props} object={gltf.scene} />;
 }
 
