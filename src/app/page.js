@@ -90,7 +90,7 @@ export default function Home() {
         height={500}
         alt="Jongil Yoon"
       />
-      <SvgComponent width={180} height={37} />
+      <SvgComponent width={180} height={370} />
     </div>
   );
 }
