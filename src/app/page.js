@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+// import Image from "next/image";
 import Anime, { anime } from "react-anime";
 
 let colors = ["blue", "green", "red"];
