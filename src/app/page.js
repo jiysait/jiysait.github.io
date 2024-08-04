@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Anime delay={anime.stagger(100)} scale={[0.1, 0.9]}>
       {colors.map((color, i) => (
-        <div key={i} className={`bg-{color}-500 h-32 w-32`} />
+        <div key={i} className={`bg-${color}-500 h-32 w-32`} />
       ))}
     </Anime>
   );
