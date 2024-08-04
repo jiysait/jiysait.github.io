@@ -1,20 +1,9 @@
 "use client";
-import { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import Image from "next/image";
 // import Anime from "react-anime";
 import anime from "animejs";
-
-const MyAnime = (props) =>
-  anime({
-    targets: ".st0, .st1",
-    strokeDashoffset: [anime.setDashoffset, 0],
-    easing: "cubicBezier(.5, .05, .1, .3)",
-    duration: 1000,
-    delay: function (el, i) {
-      return i * 250;
-    },
-  });
 
 const SvgComponent = (props) => (
   <svg
@@ -68,8 +57,20 @@ const SvgComponent = (props) => (
 );
 
 export default function Home() {
+  const [animationRef, setAnimationRef] = useState();
+
   useEffect(() => {
-    MyAnime();
+    setAnimationRef(
+      anime({
+        targets: ".st0, .st1",
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: "cubicBezier(.5, .05, .1, .3)",
+        duration: 1000,
+        delay: function (el, i) {
+          return i * 250;
+        },
+      })
+    );
   }, []);
 
   return (
