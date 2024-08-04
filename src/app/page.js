@@ -90,6 +90,7 @@ export default function Home() {
         height={500}
         alt="Jongil Yoon"
       />
+      <SvgComponent />
     </div>
   );
 }
