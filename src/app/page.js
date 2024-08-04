@@ -10,42 +10,50 @@ const SvgComponent = (props) => (
     viewBox="0 0 210 297"
     {...props}
   >
-    <path
-      d="M117.48 112.715 85.51 95.697l-32.144 16.688L59.67 76.72 33.867 51.308l35.867-5.024L85.93 13.889l15.861 32.56 35.814 5.392-26.065 25.146z"
-      style={{
-        fill: "#000",
-        strokeWidth: 0.264999,
-      }}
-    />
-    <path
-      d="M82.485 98.256h5.082v109.297h-5.082z"
-      style={{
-        fill: "#000",
-        strokeWidth: 0.264999,
-      }}
-    />
-    <ellipse
-      cx={-15.927}
-      cy={220.237}
-      rx={30.917}
-      ry={12.946}
-      style={{
-        fill: "#000",
-        strokeWidth: 0.264999,
-      }}
-      transform="rotate(-35.907)"
-    />
-    <ellipse
-      cx={-153.003}
-      cy={121.62}
-      rx={30.917}
-      ry={12.946}
-      style={{
-        fill: "#000",
-        strokeWidth: 0.264999,
-      }}
-      transform="scale(-1 1) rotate(-35.907)"
-    />
+    <MyAnime>
+      <path
+        d="M117.48 112.715 85.51 95.697l-32.144 16.688L59.67 76.72 33.867 51.308l35.867-5.024L85.93 13.889l15.861 32.56 35.814 5.392-26.065 25.146z"
+        style={{
+          fill: "#000",
+          strokeWidth: 0.264999,
+        }}
+      />
+    </MyAnime>
+    <MyAnime>
+      <path
+        d="M82.485 98.256h5.082v109.297h-5.082z"
+        style={{
+          fill: "#000",
+          strokeWidth: 0.264999,
+        }}
+      />
+    </MyAnime>
+    <MyAnime>
+      <ellipse
+        cx={-15.927}
+        cy={220.237}
+        rx={30.917}
+        ry={12.946}
+        style={{
+          fill: "#000",
+          strokeWidth: 0.264999,
+        }}
+        transform="rotate(-35.907)"
+      />
+    </MyAnime>
+    <MyAnime>
+      <ellipse
+        cx={-153.003}
+        cy={121.62}
+        rx={30.917}
+        ry={12.946}
+        style={{
+          fill: "#000",
+          strokeWidth: 0.264999,
+        }}
+        transform="scale(-1 1) rotate(-35.907)"
+      />
+    </MyAnime>
   </svg>
 );
 
@@ -84,12 +92,12 @@ export default function Home() {
         height={37}
         priority
       /> */}
-      <Image
+      {/* <Image
         src="/background_with_tulip.png"
         width={500}
         height={500}
         alt="Jongil Yoon"
-      />
+      /> */}
       <SvgComponent width={180} height={370} />
     </div>
   );
