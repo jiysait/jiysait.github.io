@@ -60,6 +60,7 @@ export default function Home() {
   const [animationRef, setAnimationRef] = useState();
 
   useEffect(() => {
+    console.log("redered");
     setAnimationRef(
       anime({
         targets: ".st0, .st1",
