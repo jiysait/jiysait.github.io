@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 import Image from "next/image";
 // import Anime from "react-anime";
-import anime from "anime";
+import anime from "animejs";
 
 const MyAnime = (props) =>
   anime({
