@@ -1,5 +1,53 @@
 import Image from "next/image";
 import Anime from "react-anime";
+import * as React from "react";
+
+const SvgComponent = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="210mm"
+    height="297mm"
+    viewBox="0 0 210 297"
+    {...props}
+  >
+    <path
+      d="M117.48 112.715 85.51 95.697l-32.144 16.688L59.67 76.72 33.867 51.308l35.867-5.024L85.93 13.889l15.861 32.56 35.814 5.392-26.065 25.146z"
+      style={{
+        fill: "#000",
+        strokeWidth: 0.264999,
+      }}
+    />
+    <path
+      d="M82.485 98.256h5.082v109.297h-5.082z"
+      style={{
+        fill: "#000",
+        strokeWidth: 0.264999,
+      }}
+    />
+    <ellipse
+      cx={-15.927}
+      cy={220.237}
+      rx={30.917}
+      ry={12.946}
+      style={{
+        fill: "#000",
+        strokeWidth: 0.264999,
+      }}
+      transform="rotate(-35.907)"
+    />
+    <ellipse
+      cx={-153.003}
+      cy={121.62}
+      rx={30.917}
+      ry={12.946}
+      style={{
+        fill: "#000",
+        strokeWidth: 0.264999,
+      }}
+      transform="scale(-1 1) rotate(-35.907)"
+    />
+  </svg>
+);
 
 const MyAnime = (props) => (
   <Anime
@@ -42,87 +90,6 @@ export default function Home() {
         height={500}
         alt="Jongil Yoon"
       />
-      <svg
-        width="210mm"
-        height="297mm"
-        viewBox="0 0 210 297"
-        version="1.1"
-        id="svg1"
-        inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-        sodipodi:docname="starflower.svg"
-        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:svg="http://www.w3.org/2000/svg"
-      >
-        <sodipodi:namedview
-          id="namedview1"
-          pagecolor="#ffffff"
-          bordercolor="#000000"
-          borderopacity="0.25"
-          inkscape:showpageshadow="2"
-          inkscape:pageopacity="0.0"
-          inkscape:pagecheckerboard="0"
-          inkscape:deskcolor="#d1d1d1"
-          inkscape:document-units="mm"
-          inkscape:zoom="0.75217262"
-          inkscape:cx="561.04143"
-          inkscape:cy="339.68267"
-          inkscape:window-width="2400"
-          inkscape:window-height="1261"
-          inkscape:window-x="4786"
-          inkscape:window-y="1341"
-          inkscape:window-maximized="1"
-          inkscape:current-layer="layer1"
-        />
-        <defs id="defs1" />
-        <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1">
-          <path
-            sodipodi:type="star"
-            style="fill:#000000;stroke-width:0.264999"
-            id="path6"
-            inkscape:flatsided="false"
-            sodipodi:sides="5"
-            sodipodi:cx="85.649269"
-            sodipodi:cy="68.427399"
-            sodipodi:r1="54.538929"
-            sodipodi:r2="27.269464"
-            sodipodi:arg1="0.94761885"
-            sodipodi:arg2="1.5759374"
-            inkscape:rounded="0"
-            inkscape:randomized="0"
-            d="M 117.47919,112.71454 85.509075,95.696503 53.365677,112.38493 59.671488,76.720683 33.866995,51.307502 69.734311,46.283826 85.929655,13.88919 l 15.861415,32.559444 35.81376,5.392195 -26.06442,25.146518 z"
-            inkscape:transform-center-x="-0.086643111"
-            inkscape:transform-center-y="-5.1255329"
-          />
-          <rect
-            style="fill:#000000;stroke-width:0.264999"
-            id="rect6"
-            width="5.0818319"
-            height="109.29716"
-            x="82.484528"
-            y="98.256462"
-          />
-          <ellipse
-            style="fill:#000000;stroke-width:0.264999"
-            id="path7"
-            ry="12.946089"
-            rx="30.917013"
-            cy="220.23726"
-            cx="-15.926889"
-            transform="rotate(-35.906835)"
-          />
-          <ellipse
-            style="fill:#000000;stroke-width:0.264999"
-            id="ellipse7"
-            ry="12.946089"
-            rx="30.917013"
-            cy="121.6196"
-            cx="-153.00322"
-            transform="matrix(-0.80997168,-0.58646899,-0.58646899,0.80997168,0,0)"
-          />
-        </g>
-      </svg>
     </div>
   );
 }
