@@ -2,6 +2,31 @@ import Image from "next/image";
 import Anime from "react-anime";
 import * as React from "react";
 
+const MyAnime = (props) => (
+  <Anime
+    easing="easeOutQuad"
+    duration={1500}
+    loop={true}
+    svg
+    component="g"
+    delay={(el, index) => index * 200}
+    direction="alternate"
+    strokeDashoffset={(el) => {
+      var pathLength = "0";
+      for (var key in el.children) {
+        // let child: SVGPathElement = el.children[key] as SVGPathElement;
+        let child = el.children[key];
+        if (child.getTotalLength) {
+          pathLength = child.getTotalLength().toString();
+          el.setAttribute("stroke-dasharray", pathLength);
+        }
+      }
+      return [pathLength, 0];
+    }}
+    {...props}
+  />
+);
+
 const SvgComponent = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -55,31 +80,6 @@ const SvgComponent = (props) => (
       />
     </MyAnime>
   </svg>
-);
-
-const MyAnime = (props) => (
-  <Anime
-    easing="easeOutQuad"
-    duration={1500}
-    loop={true}
-    svg
-    component="g"
-    delay={(el, index) => index * 200}
-    direction="alternate"
-    strokeDashoffset={(el) => {
-      var pathLength = "0";
-      for (var key in el.children) {
-        // let child: SVGPathElement = el.children[key] as SVGPathElement;
-        let child = el.children[key];
-        if (child.getTotalLength) {
-          pathLength = child.getTotalLength().toString();
-          el.setAttribute("stroke-dasharray", pathLength);
-        }
-      }
-      return [pathLength, 0];
-    }}
-    {...props}
-  />
 );
 
 export default function Home() {
