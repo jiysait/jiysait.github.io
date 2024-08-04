@@ -13,11 +13,12 @@ export default function Home() {
       anime({
         targets: ["path"],
         strokeDashoffset: [anime.setDashoffset, 0],
-        easing: "cubicBezier(.5, .05, .1, .3)",
-        duration: 1000,
+        easing: "easeInOutSine",
+        duration: 1500,
         delay: function (el, i) {
           return i * 250;
         },
+        direction: "alternate",
       })
     );
   }, []);
