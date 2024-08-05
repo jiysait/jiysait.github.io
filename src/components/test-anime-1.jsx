@@ -1,15 +1,19 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import anime from "anime";
 
 export default function TestAnime1() {
+  const [animationRef, setAnimationRef] = useState();
+
   useEffect(() => {
-    // anime({
-    //   targets: ".test-anime",
-    //   translateX: 250,
-    // });
-  }, []);
+    setAnimationRef(
+      anime({
+        targets: ".test-anime",
+        translateX: 250,
+      })
+    );
+  }, []); // Only run once.
 
   return (
     <div className={`wrapper w-screen h-screen bg-white`}>
