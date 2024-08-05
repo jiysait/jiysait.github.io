@@ -5,8 +5,8 @@ import Anime, { anime } from "react-anime";
 export default function Home() {
   return (
     <div className={`wrapper w-screen h-screen bg-white`}>
-      <div className={`h-32 w-32 bg-orange anime-test`} />
-      <div className={`h-32 w-32 bg-blue anime-test`} />
+      <div className={`h-32 w-32 border-solid anime-test`} />
+      <div className={`h-32 w-32 border-solid anime-test`} />
     </div>
   );
   // return (
