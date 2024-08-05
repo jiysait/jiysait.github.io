@@ -1,14 +1,14 @@
 "use client";
 
-import anime from "anime";
 import { useEffect } from "react";
+import anime from "anime";
 
 export default function TestAnime1() {
   useEffect(() => {
-    anime({
-      targets: ".test-anime",
-      translateX: 250,
-    });
+    // anime({
+    //   targets: ".test-anime",
+    //   translateX: 250,
+    // });
   }, []);
 
   return (
