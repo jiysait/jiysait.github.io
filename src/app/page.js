@@ -2,15 +2,12 @@
 // import Image from "next/image";
 import Anime, { anime } from "react-anime";
 
-let colors = ["blue", "green", "red"];
-
 export default function Home() {
   return (
-    <Anime delay={anime.stagger(100)} scale={[0.1, 0.9]}>
-      {colors.map((color, i) => (
-        <div key={i} className={`bg-${color}-500 h-32 w-32`} />
-      ))}
-    </Anime>
+    <>
+      <div className={`h-32 w-32 anime-test`} />
+      <div className={`h-32 w-32 anime-test`} />
+    </>
   );
   // return (
   //   <div className="w-screen h-screen bg-white">
