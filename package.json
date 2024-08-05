@@ -12,7 +12,6 @@
     "anime": "^0.1.2",
     "next": "14.2.5",
     "react": "^18",
-    "react-anime": "^4.1.1",
     "react-dom": "^18"
   },
   "devDependencies": {
