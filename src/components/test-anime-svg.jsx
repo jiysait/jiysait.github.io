@@ -15,6 +15,18 @@ export default function TestAnimeSVG() {
         <Anime
           svg
           // strokeDashoffset={[anime.setDashoffset, 0]}
+          strokeDashoffset={(el) => {
+            var pathLength = "0";
+            for (var key in el.children) {
+              // let child: SVGPathElement = el.children[key] as SVGPathElement;
+              let child = el.children[key];
+              if (child.getTotalLength) {
+                pathLength = child.getTotalLength().toString();
+                el.setAttribute("stroke-dasharray", pathLength);
+              }
+            }
+            return [pathLength, 0];
+          }}
           easing="cubicBezier(.5, .05, .1, .3)"
           duration={1000}
           delay={(el, index) => index * 240}
