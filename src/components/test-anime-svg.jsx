@@ -1,11 +1,17 @@
 "use client";
 
-import Anime from "react-anime";
+import Anime, { anime } from "react-anime";
 
 export default function TestAnimeSVG() {
   return (
     <div className={`wrapper w-screen h-screen bg-white`}>
-      <Anime>
+      <Anime
+        svg
+        strokeDashoffset={[anime.setDashoffset, 0]}
+        easing="cubicBezier(.5, .05, .1, .3)"
+        duration={1000}
+        delay={(el, index) => index * 240}
+      >
         <svg
           className="test-anime-svg"
           width="500"
