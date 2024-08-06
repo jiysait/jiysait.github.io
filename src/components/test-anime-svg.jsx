@@ -1,3 +1,5 @@
+"use client";
+
 import Anime from "react-anime";
 
 export default function TestAnimeSVG() {
