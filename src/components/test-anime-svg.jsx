@@ -16,6 +16,7 @@ export default function TestAnimeSVG() {
           svg
           // strokeDashoffset={[anime.setDashoffset, 0]}
           strokeDashoffset={(el) => {
+            console.log(el);
             var pathLength = "0";
             for (var key in el.children) {
               // let child: SVGPathElement = el.children[key] as SVGPathElement;
