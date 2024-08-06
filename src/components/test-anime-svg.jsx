@@ -3,8 +3,10 @@ export default function TestAnimeSVG() {
     <div className={`wrapper w-screen h-screen bg-white`}>
       <svg
         className="test-anime-svg"
+        width="100"
+        height="100"
         viewBox="0 0 1122.5197 793.70081"
-        preserveAspectRatio="xMidYMax meet"
+        // preserveAspectRatio="xMidYMax meet"
       >
         <path
           style={{
