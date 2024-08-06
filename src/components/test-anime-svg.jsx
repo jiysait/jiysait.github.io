@@ -15,7 +15,7 @@ export default function TestAnimeSVG() {
         <Anime
           svg
           strokeDashoffset={[anime.setDashoffset, 0]}
-          easing="cubicBezier(.5, .05, .1, .3)"
+          // easing="cubicBezier(.5, .05, .1, .3)"
           duration={1000}
           delay={(el, index) => index * 240}
         >
