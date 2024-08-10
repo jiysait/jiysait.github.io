@@ -1,18 +1,12 @@
-// import TestReactAnime from "@/components/test-react-anime";
-// import TestImage from "@/components/test-image";
-// import TestAnimeSVG from "@/components/test-anime-svg";
-// import TestExample from "@/components/test-example";
+// import TestUseEffectAnimeJS from "@/components/test-useeffect-animejs";
 
-import TestUseEffectAnimeJS from "@/components/test-useeffect-animejs";
+import TestBrushPath from "@/components/test-brush-path";
 
 export default function Home() {
   return (
     <>
-      {/* <TestReactAnime /> */}
-      {/* <TestImage /> */}
-      {/* <TestAnimeSVG /> */}
-      {/* <TestExample /> */}
-      <TestUseEffectAnimeJS />
+      {/* <TestUseEffectAnimeJS /> */}
+      <TestBrushPath />
     </>
   );
 }
