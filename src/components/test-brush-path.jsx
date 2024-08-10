@@ -29,7 +29,7 @@ export default function TestBrushPath() {
           id="path1"
         />
       </svg>
-      <svg viewBox="0 0 210 297" style={{ fill: "none" }}>
+      <svg viewBox="0 0 210 297" style={{ fill: "none", stroke: "black" }}>
         <path
           class="st1"
           // style={{
