@@ -22,8 +22,8 @@ export default function TestBrushPath() {
 
   return (
     // <div className={`wrapper w-screen h-screen bg-white`}>
-    <div>
-      <svg viewBox="0 0 210 297" style={{ fill: "none", stroke: "red" }}>
+    <div className={`bg-white`}>
+      <svg viewBox="0 0 210 297">
         <path
           style={{
             fill: "#000000",
