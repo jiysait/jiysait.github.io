@@ -8,7 +8,7 @@ export default function TestBrushPath() {
     anime({
       targets: ".st0, .st1",
       // strokeDashoffset: [anime.setDashoffset, 0],
-      fill: "#FFF",
+      fill: "#000000",
       easing: "cubicBezier(.5, .05, .1, .3)",
       duration: 1000,
       delay: function (el, i) {
@@ -30,7 +30,7 @@ export default function TestBrushPath() {
           id="path1"
         />
       </svg> */}
-      <svg viewBox="0 0 210 297" style={{ fill: "none", stroke: "black" }}>
+      <svg viewBox="0 0 210 297" style={{ fill: "none", stroke: "none" }}>
         <path
           class="st1"
           // style={{
