@@ -6,7 +6,7 @@ import anime from "animejs";
 export default function TestBrushPath() {
   const animation = () => {
     anime({
-      targets: "#path7",
+      targets: ".st0",
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: "cubicBezier(.5, .05, .1, .3)",
       duration: 1000,
@@ -25,6 +25,7 @@ export default function TestBrushPath() {
     <div className={`bg-white`}>
       <svg viewBox="0 0 210 297">
         <path
+          class="st0"
           style={{
             fill: "#000000",
             fillOpacity: 1,
