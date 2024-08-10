@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import anime from "animejs";
 
-export default function TestExample() {
+export default function TestUseEffectAnimeJS() {
   const animation = () => {
     anime({
       targets: ".st0, .st1",
