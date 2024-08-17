@@ -7,6 +7,63 @@ export default function TestLogo() {
   return (
     <div className={`bg-black`}>
       <svg class="logo" viewBox="2 0 800 384">
+        <defs>
+          <radialGradient
+            cx="50%"
+            cy="0%"
+            fx="50%"
+            fy="0%"
+            r="50%"
+            id="radialGradient-1"
+          >
+            <stop stop-color="#329FFF" offset="0%"></stop>
+            <stop stop-color="#206EFF" offset="100%"></stop>
+          </radialGradient>
+          <radialGradient
+            cx="50%"
+            cy="0%"
+            fx="50%"
+            fy="0%"
+            r="50%"
+            id="radialGradient-2"
+          >
+            <stop stop-color="#FF7894" offset="0%"></stop>
+            <stop stop-color="#FF324A" offset="100%"></stop>
+          </radialGradient>
+          <radialGradient
+            cx="50%"
+            cy="0%"
+            fx="50%"
+            fy="0%"
+            r="100%"
+            id="radialGradient-3"
+          >
+            <stop stop-color="#FF7894" offset="0%"></stop>
+            <stop stop-color="#FF324A" offset="100%"></stop>
+          </radialGradient>
+          <radialGradient
+            cx="50%"
+            cy="0%"
+            fx="50%"
+            fy="0%"
+            r="100%"
+            id="radialGradient-4"
+          >
+            <stop stop-color="#359FFC" offset="0%"></stop>
+            <stop stop-color="#206EFF" offset="100%"></stop>
+          </radialGradient>
+          <radialGradient
+            cx="50%"
+            cy="0%"
+            fx="50%"
+            fy="0%"
+            r="50%"
+            id="radialGradient-5"
+          >
+            <stop stop-color="#5FFFD2" offset="0%"></stop>
+            <stop stop-color="#31FFA6" offset="100%"></stop>
+          </radialGradient>
+        </defs>
         <path
           d="M531.599976,119.042822 C531.872599,121.442657 532.736164,123.612749 534.213875,124.965578 C535.547208,126.186231 537.324986,127 539.587612,127 C542.133067,127 544.032057,126.104854 545.36539,124.680759 C546.739127,123.175287 547.506804,120.978112 547.506804,118.374052 L547.506804,97"
           id="line-s"
