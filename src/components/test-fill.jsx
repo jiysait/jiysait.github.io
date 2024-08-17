@@ -303,8 +303,8 @@ export default function TestFill() {
       <section>
         <svg
           className="logo"
-          width="25rem"
-          height="12rem"
+          // width="25rem"
+          // height="12rem"
           viewBox="0 0 800 384"
         >
           {/* <defs>
