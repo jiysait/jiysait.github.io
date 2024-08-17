@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
-import "../custom.css";
+import "../app/custom.css";
 
 export default function TestFill() {
   /////////////////////////////////
