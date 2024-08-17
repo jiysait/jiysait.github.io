@@ -307,7 +307,7 @@ export default function TestFill() {
           height="12rem"
           viewBox="0 0 800 384"
         >
-          <defs>
+          {/* <defs>
             <radialGradient
               cx="50%"
               cy="0%"
@@ -363,7 +363,7 @@ export default function TestFill() {
               <stop stop-color="#5FFFD2" offset="0%"></stop>
               <stop stop-color="#31FFA6" offset="100%"></stop>
             </radialGradient>
-          </defs>
+          </defs> */}
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <rect
               id="dot-js"
