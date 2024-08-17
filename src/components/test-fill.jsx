@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
+import anime from "animejs";
 import "../app/custom.css";
 
 export default function TestFill() {
@@ -298,9 +299,9 @@ export default function TestFill() {
 
   return (
     <>
-      <canvas class="fireworks"></canvas>
+      <canvas className="fireworks"></canvas>
       <section>
-        <svg class="logo" width="25rem" height="12rem" viewBox="0 0 800 384">
+        <svg className="logo" width="25rem" height="12rem" viewBox="0 0 800 384">
           <defs>
             <radialGradient
               cx="50%"
