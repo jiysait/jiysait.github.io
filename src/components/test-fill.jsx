@@ -298,10 +298,15 @@ export default function TestFill() {
   }, []);
 
   return (
-    <>
+    <div className={`bg-white`}>
       <canvas className="fireworks"></canvas>
       <section>
-        <svg className="logo" width="25rem" height="12rem" viewBox="0 0 800 384">
+        <svg
+          className="logo"
+          width="25rem"
+          height="12rem"
+          viewBox="0 0 800 384"
+        >
           <defs>
             <radialGradient
               cx="50%"
@@ -476,6 +481,6 @@ export default function TestFill() {
           </g>
         </svg>
       </section>
-    </>
+    </div>
   );
 }
