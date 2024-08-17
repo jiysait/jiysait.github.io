@@ -298,8 +298,8 @@ export default function TestFill() {
   }, []);
 
   return (
-    <div className={`bg-white`}>
-      <canvas className="fireworks"></canvas>
+    <div className={`bg-black`}>
+      {/* <canvas className="fireworks"></canvas> */}
       <section>
         <svg
           className="logo"
