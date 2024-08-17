@@ -301,7 +301,7 @@ export default function TestFill() {
     <div className={`bg-black`}>
       {/* <canvas className="fireworks"></canvas> */}
       <svg
-        className="logo"
+        class="logo"
         // width="25rem"
         // height="12rem"
         viewBox="0 0 800 384"
