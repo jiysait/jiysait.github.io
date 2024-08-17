@@ -294,7 +294,7 @@ export default function TestFill() {
   };
 
   useEffect(() => {
-    animation();
+    // animation();
   }, []);
 
   return (
