@@ -1,9 +1,36 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import anime from "animejs";
 
 export default function TestLogo() {
+  const setDashoffset = (el) => {
+    var l = el.getTotalLength();
+    el.setAttribute("stroke-dasharray", l);
+    return [l, 0];
+  };
+
+  const animation = () => {
+    anime({
+      // targets: "#lines path",
+      targets: "path",
+      strokeDashoffset: {
+        value: setDashoffset,
+        duration: 700,
+        easing: "easeOutQuad",
+      },
+      transform: ["translate(0 128)", "translate(0 0)"],
+      delay: function (el, i) {
+        return 750 + i * 120;
+      },
+      duration: 1400,
+    });
+  };
+
+  useEffect(() => {
+    animation();
+  }, []);
+
   return (
     <div className={`bg-black`}>
       <svg class="logo" viewBox="2 0 800 384">
