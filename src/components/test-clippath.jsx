@@ -4,7 +4,7 @@ import React from "react";
 
 export default function TestClipPath() {
   return (
-    <>
+    <div className={`bg-white`}>
       <div className="brush-wrap">
         <p>한글테스트</p>
       </div>
