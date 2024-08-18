@@ -57,6 +57,6 @@ export default function TestClipPath() {
           />
         </defs>
       </svg>
-    </>
+    </div>
   );
 }
