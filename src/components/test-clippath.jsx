@@ -13,7 +13,7 @@ export default function TestClipPath() {
         <p>Hangul(indefinite)</p>
       </div>
 
-      <svg height="0" width="0" xmlns="http://www.w3.org/2000/svg">
+      <svg>
         <defs>
           <clipPath id="rect-cp">
             <rect id="rect" x="0" y="0" width="0" height="1">
