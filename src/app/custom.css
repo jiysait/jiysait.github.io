@@ -121,3 +121,9 @@ MDN web doc
 #myClip circle {
   animation: openYourHeart 15s infinite;
 }
+
+html,
+body,
+svg {
+  height: 100%;
+}
