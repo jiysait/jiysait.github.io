@@ -5,6 +5,9 @@ import React from "react";
 export default function BasicClipPath() {
   return (
     <div className={`bg-white`}>
+      <clipPath id="myClip">
+        <circle cx="40" cy="35" r="35" />
+      </clipPath>
       <svg viewBox="0 0 100 100">
         <path
           id="heart"
