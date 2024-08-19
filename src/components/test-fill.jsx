@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import anime from "animejs";
-import "../app/custom.css";
+// import "../app/custom.css";
 
 export default function TestFill() {
   /////////////////////////////////

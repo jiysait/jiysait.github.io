@@ -104,3 +104,20 @@ clippathunits
   font-style: italic;
   filter: drop-shadow(0px 0px 2px black);
 }
+
+/******
+MDN web doc
+*******/
+
+@keyframes openYourHeart {
+  from {
+    r: 0;
+  }
+  to {
+    r: 60px;
+  }
+}
+
+#myClip circle {
+  animation: openYourHeart 15s infinite;
+}
