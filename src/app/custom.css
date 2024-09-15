@@ -1,57 +1,72 @@
-/******
-MDN web doc
-*******/
+/* paper textured background */
+#bg {
+  width: 100%;
+  height: 100%;
+}
 
-/* heart */
-@keyframes openYourHeart {
+html {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cfilter id='roughpaper'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.02' result='noise' numOctaves='70' /%3E%3CfeDiffuseLighting in='noise' lighting-color='%23fff' surfaceScale='2'%3E%3CfeDistantLight azimuth='45' elevation='60' /%3E%3C/feDiffuseLighting%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23roughpaper)' /%3E%3C/svg%3E");
+  background-size: cover;
+}
+
+/* handwriting ink flow */
+@keyframes myHandwriting {
   from {
     r: 0;
   }
   to {
-    r: 60px;
+    r: 300px;
+  }
+}
+@keyframes myHandwritingDelayed {
+  0% {
+    r: 0;
+  }
+  50% {
+    r: 0px;
+  }
+  100% {
+    r: 400px;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  50% {
+    opacity: 0.1;
   }
 }
 
-#myClip circle {
-  animation: openYourHeart 15s infinite;
+#inkFlow-1 circle {
+  -webkit-animation: myHandwriting 9s;
+  -moz-animation: myHandwriting 9s;
+  animation: myHandwriting 9s;
 }
-
-html,
-body,
-svg {
-  height: 100%;
+#inkFlow-2 circle {
+  -webkit-animation: myHandwritingDelayed 4.9s;
+  -moz-animation: myHandwritingDelayed 4.9s;
+  animation: myHandwritingDelayed 4.9s;
+  /* animation: myHandwriting 10s infinite; */
 }
-
-/* brush drawing */
-.brush-wrap {
-  position: relative;
-  display: inline-block;
-  padding: 3rem;
+#g-animated {
+  -webkit-animation: fadeIn 4.9s;
+  -moz-animation: fadeIn 4.9s;
+  animation: fadeIn 4.9s;
 }
-
-/* applying example animation (indefinite variant) */
-.brush-wrap.brush-wrap--indefinite:before {
-  clip-path: url(#clip-indefinite);
-}
-
-/* clipping/animating object (pseudo element) */
-.brush-wrap:before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: black;
-  z-index: -1;
-  clip-path: url(#clip); /* applying clip animation */
-}
-
-.brush-wrap p {
-  font-size: 2rem;
-  text-transform: uppercase;
-  margin: 0;
-  color: white;
-  font-style: italic;
-  filter: drop-shadow(0px 0px 2px black);
+#star {
+  /* -webkit-animation: blink 4s ease-out step-start 0s infinite;
+  -moz-animation: blink 4s ease-out step-start 0s infinite;
+  animation: blink 4s ease-out step-start 0s infinite; */
+  -webkit-animation: blink 4s ease-in infinite;
+  -moz-animation: blink 4s ease-in infinite;
+  animation: blink 4s ease-in infinite;
 }
